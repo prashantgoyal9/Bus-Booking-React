@@ -14,6 +14,8 @@ export default function MyBookings() {
     return elem.userid === user.id;
   });
 
+  // console.log(cur_userbookings);
+
   return (
     <Fragment>
       <div className="main-main-mybooking">
@@ -55,7 +57,7 @@ export default function MyBookings() {
                   </div>
                 );
               })}
-              {cur_userbookings === undefined && <h1>No Bookings Found!!</h1>}
+              {cur_userbookings === undefined || cur_userbookings.length == 0 && <h1>No Bookings Found!!</h1>}
             </div>
           </div>
         </div>

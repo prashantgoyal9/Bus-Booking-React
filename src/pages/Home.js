@@ -28,6 +28,7 @@ function Home() {
       seats: 35,
       price: 400,
     },
+    
     {
       busid: 3,
       busname: "RAJADHANI SPECIAL",
@@ -48,6 +49,28 @@ function Home() {
       seats: 35,
       price: 800,
     },
+
+    {
+      busid: 5,
+      busname: "Indore SPECIAL",
+      from: "Hyderabad",
+      to: "Indore",
+      pickup: "06: 00 AM",
+      droptime: "7:30 PM",
+      seats: 35,
+      price: 400,
+    },
+    {
+      busid: 5,
+      busname: "Indore HYD SPECIAL",
+      from: "Indore",
+      to: "Hyderabad",
+      pickup: "06: 00 AM",
+      droptime: "7:30 PM",
+      seats: 35,
+      price: 400,
+    },
+
   ];
 
   const today = new Date();
@@ -113,6 +136,7 @@ function Home() {
                 <option value="none">-Select From-</option>
                 <option value="Hyderabad">Hyderabad</option>
                 <option value="Delhi">Delhi</option>
+                <option value="Indore">Indore</option>
               </select>
             </div>
 
@@ -131,6 +155,7 @@ function Home() {
                 <option value="none">-Select To-</option>
                 <option value="Hyderabad">Hyderabad</option>
                 <option value="Delhi">Delhi</option>
+                <option value="Indore">Indore</option>
               </select>
             </div>
           </div>
